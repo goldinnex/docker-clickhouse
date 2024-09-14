@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+    clickhouse:
+        image: clickhouse/clickhouse-server:latest
+        container_name: clickhouse
+#        restart: always
+        ports:
+          - "8123:8123"
+        volumes:
+          - ./data/clickhouse/lib:/var/lib/clickhouse/
+          - ./data/clickhouse/log:/var/log/clickhouse-server/
+          - ./config.d/custom_settings.xml:/etc/clickhouse-server/config.d/custom_settings.xml
+          - ./users.d/user_settings.xml:/etc/clickhouse-server/users.d/user_settings.xml

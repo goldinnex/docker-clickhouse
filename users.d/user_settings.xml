@@ -1,0 +1,20 @@
+<clickhouse>
+  <profiles>
+    <default>
+      <final>0</final>
+      <do_not_merge_across_partitions_select_final>1</do_not_merge_across_partitions_select_final>
+      <max_memory_usage>6000000000</max_memory_usage>
+      <max_concurrent_queries_for_user>5</max_concurrent_queries_for_user>
+      <max_memory_usage_for_user>6000000000</max_memory_usage_for_user>
+    </default>
+  </profiles>
+  <users>
+    <default>
+        <password>T08ooalGyIyO</password>
+        <access_management>0</access_management>
+        <named_collection_control>0</named_collection_control>
+        <show_named_collections>0</show_named_collections>
+        <show_named_collections_secrets>0</show_named_collections_secrets>
+    </default>
+  </users>
+</clickhouse>
